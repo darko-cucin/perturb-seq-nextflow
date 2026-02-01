@@ -1,0 +1,3 @@
+sample,fastq_1,fastq_2,lib_type
+SC3_v3_NextGem_CRISPR_A549_5K,/Users/darko/Desktop/Loka/final/nf-core-perturbseq/assets/test_data/sequence_reads/SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr_S4_L001_R1_001.fastq.gz,/Users/darko/Desktop/Loka/final/nf-core-perturbseq/assets/test_data/sequence_reads/SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr_S4_L001_R2_001.fastq.gz,CRISPR
+SC3_v3_NextGem_CRISPR_A549_5K,/Users/darko/Desktop/Loka/final/nf-core-perturbseq/assets/test_data/sequence_reads/SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz,/Users/darko/Desktop/Loka/final/nf-core-perturbseq/assets/test_data/sequence_reads/SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz,GEX

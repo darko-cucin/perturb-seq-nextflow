@@ -1,0 +1,251 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir=2025-01-09T12:32:06+0000 :/opt/conda/conda-bld/star_1736425784849/work/source
+##### Command Line:
+/opt/conda/bin/STAR-avx2 --genomeDir chr20 --readFilesIn SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz --runThreadN 4 --outFileNamePrefix SC3_v3_NextGem_CRISPR_A549_5K. --soloType CB_UMI_Simple --soloCBwhitelist whitelist.uncompressed.txt --readFilesCommand zcat --soloCBstart 1 --soloCBlen 16 --soloUMIstart 17 --soloUMIlen 12 --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --runDirPerm All_RWX --twopassMode Basic --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 12884901888
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 SC3_v3_NextGem_CRISPR_A549_5K.
+###### All USER parameters from Command Line:
+genomeDir                     chr20     ~RE-DEFINED
+readFilesIn                   SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz   SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz        ~RE-DEFINED
+runThreadN                    4     ~RE-DEFINED
+outFileNamePrefix             SC3_v3_NextGem_CRISPR_A549_5K.     ~RE-DEFINED
+soloType                      CB_UMI_Simple     ~RE-DEFINED
+soloCBwhitelist               whitelist.uncompressed.txt        ~RE-DEFINED
+readFilesCommand              zcat        ~RE-DEFINED
+soloCBstart                   1     ~RE-DEFINED
+soloCBlen                     16     ~RE-DEFINED
+soloUMIstart                  17     ~RE-DEFINED
+soloUMIlen                    12     ~RE-DEFINED
+soloCBmatchWLtype             1MM_multi_Nbase_pseudocounts     ~RE-DEFINED
+soloUMIfiltering              MultiGeneUMI_CR        ~RE-DEFINED
+soloUMIdedup                  1MM_CR        ~RE-DEFINED
+runDirPerm                    All_RWX     ~RE-DEFINED
+twopassMode                   Basic     ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+limitBAMsortRAM               12884901888     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        4
+runDirPerm                        All_RWX
+genomeDir                         chr20
+readFilesIn                       SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz   SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz   
+readFilesCommand                  zcat   
+limitBAMsortRAM                   12884901888
+outFileNamePrefix                 SC3_v3_NextGem_CRISPR_A549_5K.
+outSAMtype                        BAM   SortedByCoordinate   
+twopassMode                       Basic
+soloType                          CB_UMI_Simple
+soloCBstart                       1
+soloUMIstart                      17
+soloCBlen                         16
+soloUMIlen                        12
+soloCBwhitelist                   whitelist.uncompressed.txt   
+soloUMIdedup                      1MM_CR   
+soloCBmatchWLtype                 1MM_multi_Nbase_pseudocounts
+soloUMIfiltering                  MultiGeneUMI_CR   
+
+-------------------------------
+##### Final effective command line:
+/opt/conda/bin/STAR-avx2   --runThreadN 4   --runDirPerm All_RWX   --genomeDir chr20   --readFilesIn SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz   SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz      --readFilesCommand zcat      --limitBAMsortRAM 12884901888   --outFileNamePrefix SC3_v3_NextGem_CRISPR_A549_5K.   --outSAMtype BAM   SortedByCoordinate      --twopassMode Basic   --soloType CB_UMI_Simple   --soloCBstart 1   --soloUMIstart 17   --soloCBlen 16   --soloUMIlen 12   --soloCBwhitelist whitelist.uncompressed.txt      --soloUMIdedup 1MM_CR      --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts   --soloUMIfiltering MultiGeneUMI_CR   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+
+   Input read files for mate 1 :
+-rw-r--r-- 1 501 dialout 4468070 Feb  1 20:45 SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz
+
+   readsCommandsFile:
+exec > "SC3_v3_NextGem_CRISPR_A549_5K._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz"
+
+
+   Input read files for mate 2 :
+-rw-r--r-- 1 501 dialout 2059128 Feb  1 20:45 SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz
+
+   readsCommandsFile:
+exec > "SC3_v3_NextGem_CRISPR_A549_5K._STARtmp/tmp.fifo.read2"
+echo FILE 0
+zcat      "SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz"
+
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Number of CBs in the whitelist = 6794880
+Feb 01 21:32:09 ... Finished reading, sorting and deduplicating CB whitelist sequences.
+Finished loading and checking parameters
+Reading genome generation parameters:
+### /opt/conda/bin/STAR-sse4.1   --runMode genomeGenerate      --genomeDir chr20   --genomeFastaFiles chr20.fasta      --sjdbGTFfile genes.gtf
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              chr20.fasta        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   genes.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               66344061   542781174        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 1
+1	chr20	64444167	0
+--sjdbOverhang = 100 taken from the generated genome
+Started loading the genome: Sun Feb  1 21:32:09 2026
+
+Genome: size given as a parameter = 66344061
+SA: size given as a parameter = 542781174
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=66344061;  nSAbyte=542781174
+GstrandBit=32   SA number of indices=131583314
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 66344061 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 66344061 bytes
+SA file size: 542781174 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 542781174 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Sun Feb  1 21:32:30 2026
+
+Processing splice junctions database sjdbN=9237,   pGe.sjdbOverhang=100 
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Starting to map file # 0
+mate 1:   SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz
+mate 2:   SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz
+Thread #2 end of input stream, nextChar=-1
+Completed: thread #1
+Completed: thread #3
+Completed: thread #2
+Completed: thread #0
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Feb 01 21:33:53   Loaded database junctions from the generated genome chr20//sjdbList.out.tab: 9237 total junctions
+
+Feb 01 21:33:53   Loaded database junctions from the 1st pass file: SC3_v3_NextGem_CRISPR_A549_5K._STARpass1//SJ.out.tab: 10195 total junctions
+
+Feb 01 21:33:53   Finished preparing junctions
+Feb 01 21:33:53 ..... inserting junctions into the genome indices
+Feb 01 21:33:53   Finished SA search: number of new junctions=829, old junctions=9237
+Feb 01 21:33:54   Finished sorting SA indicesL nInd=331600
+Genome size with junctions=66510690  64487424   2023266
+GstrandBit1=32   GstrandBit=32
+Feb 01 21:33:58   Finished inserting junction indices
+Feb 01 21:34:06   Finished SAi
+Feb 01 21:34:06 ..... finished inserting junctions into genome
+
+   Input read files for mate 1 :
+-rw-r--r-- 1 501 dialout 4468070 Feb  1 20:45 SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz
+
+   readsCommandsFile:
+exec > "SC3_v3_NextGem_CRISPR_A549_5K._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz"
+
+
+   Input read files for mate 2 :
+-rw-r--r-- 1 501 dialout 2059128 Feb  1 20:45 SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz
+
+   readsCommandsFile:
+exec > "SC3_v3_NextGem_CRISPR_A549_5K._STARtmp/tmp.fifo.read2"
+echo FILE 0
+zcat      "SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz"
+
+Loaded transcript database, nTr=5502
+Loaded exon database, nEx=37458
+Created thread # 1
+Starting to map file # 0
+mate 1:   SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz
+mate 2:   SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz
+Created thread # 2
+Created thread # 3
+Thread #2 end of input stream, nextChar=-1
+Completed: thread #3
+Completed: thread #0
+BAM sorting: 3806 mapped reads
+BAM sorting bins genomic start loci:
+1	0	1113907
+2	0	2464584
+3	0	3421337
+4	0	4024263
+5	0	4024343
+6	0	4024404
+7	0	4621642
+8	0	5533072
+9	0	6751772
+10	0	10349262
+11	0	13393611
+12	0	14734266
+13	0	17570090
+14	0	18090271
+15	0	18504815
+16	0	18504962
+17	0	21115019
+18	0	21755425
+19	0	22732933
+20	0	25368159
+21	0	29446967
+22	0	31372463
+23	0	32337439
+24	0	33562478
+25	0	34125533
+26	0	34555997
+27	0	35314161
+28	0	35964556
+29	0	36820650
+30	0	37318906
+31	0	38708242
+32	0	41197037
+33	0	43653149
+34	0	45004223
+35	0	45729373
+36	0	46100068
+37	0	47595247
+38	0	49229053
+39	0	49957929
+40	0	50840264
+41	0	51130878
+42	0	52067848
+43	0	54377038
+44	0	56459345
+45	0	57358529
+46	0	57358687
+47	0	58910829
+48	0	62034955
+Completed: thread #2
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Feb 01 21:35:09 ..... finished mapping
+RAM after mapping:
+VmPeak:	 6398964 kB; VmSize:	 6333472 kB; VmHWM:	 4321408 kB; VmRSS:	 4316968 kB; 
+RAM after freeing genome index memory:
+VmPeak:	 6398964 kB; VmSize:	 2393772 kB; VmHWM:	 4321408 kB; VmRSS:	 1658504 kB; 
+Feb 01 21:35:10 ..... started Solo counting
+Feb 01 21:35:10 ... Starting Solo post-map for Gene
+Feb 01 21:35:10 ... Finished allocating arrays for Solo 1.09524e-05 GiB
+Feb 01 21:35:10 ... Finished reading reads from Solo files nCB=1335, nReadPerCBmax=4, yesWLmatch=0
+RAM for solo feature Gene
+VmPeak:	 6398964 kB; VmSize:	 2473568 kB; VmHWM:	 4321408 kB; VmRSS:	 1738260 kB; 
+Feb 01 21:35:10 ... Finished collapsing UMIs
+Feb 01 21:35:10 ... Solo: writing raw matrix
+Solo output directory directory created: SC3_v3_NextGem_CRISPR_A549_5K.Solo.out/Gene//raw/
+Feb 01 21:35:12 ... Solo: cell filtering
+cellFiltering: simple: nUMImax=2; nUMImin=1; nCellsSimple=1271
+Solo output directory directory created: SC3_v3_NextGem_CRISPR_A549_5K.Solo.out/Gene/filtered/
+RAM after completing solo:
+VmPeak:	 6398964 kB; VmSize:	 2420504 kB; VmHWM:	 4321408 kB; VmRSS:	 1685220 kB; 
+Feb 01 21:35:12 ..... finished Solo counting
+Feb 01 21:35:12 ..... started sorting BAM
+Max memory needed for sorting = 156818
+ALL DONE!

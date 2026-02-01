@@ -1,0 +1,24 @@
+{
+    "starsolo": {
+        "10XV1": {
+            "protocol": "CB_UMI_Simple",
+            "extra_args": "--soloUMIlen 10",
+            "whitelist": "assets/whitelist/10x_V1_barcode_whitelist.txt.gz"
+        },
+        "10XV2": {
+            "protocol": "CB_UMI_Simple",
+            "extra_args": "--soloUMIlen 10",
+            "whitelist": "assets/whitelist/10x_V2_barcode_whitelist.txt.gz"
+        },
+        "10XV3": {
+            "protocol": "CB_UMI_Simple",
+            "extra_args": "--soloUMIlen 12",
+            "whitelist": "assets/whitelist/10x_V3_barcode_whitelist.txt.gz"
+        },
+        "10XV4": {
+            "protocol": "CB_UMI_Simple",
+            "extra_args": "--soloUMIlen 12",
+            "whitelist": "assets/whitelist/10x_V4_barcode_whitelist.txt.gz"
+        }
+    }
+}
