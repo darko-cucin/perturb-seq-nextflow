@@ -146,13 +146,13 @@ Other parameters that can be specified are as follows (we will list the most imp
 * **Start of Cell Barcode** (```--cb_start```) - Cell barcode start base.
 * **Length of Cell Barcode** (```--cb_len```) - Cell barcode length.
 * **Number of matched bases CRISPR** (```--number_of_bases_to_match_crispr```) - alignment will be output only if the number of matched bases is higher
-than or equal to this value. Important parameter for CRISPR library types, as one CRISPR read will never match the reference with full length (because reference contigs are shorter than a read)
+than or equal to this value. Important parameter for CRISPR library types, as one CRISPR read will never match the reference with full length (because reference contigs are shorter than a read).
 * **Percentage of matched bases CRISPR** (```--percent_of_bases_to_match_crispr```) - alignment will be output only if the number of matched bases is higher
 than or equal to this value. Important parameter for CRISPR library types, as one CRISPR read will never match the reference with full length (because reference contigs are shorter than a read).
 
 The example command line for running a pipeline is as follows:
 
-```nextflow run main.nf -profile docker --input assets/samplesheet.csv --index_reference_gex assets/test_data/chr20 --fasta_reference_crispr assets/test_data/crispr_reference.fa.gz --gtf_reference_crispr assets/test_data/crispr_reference.gtf.gz --outdir testing```
+```nextflow run main.nf -profile docker --input assets/samplesheet.csv --fasta_reference_gex assets/test_data/small_chr.fasta.gz --gtf_reference_gex assets/test_data/small_chr.gtf.gz --fasta_reference_crispr assets/test_data/crispr_reference.fa.gz --gtf_reference_crispr assets/test_data/crispr_reference.gtf.gz --outdir testing```
 
 You can also run with a test profile ```nextflow run main.nf -profile,test```
 
