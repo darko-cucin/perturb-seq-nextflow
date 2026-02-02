@@ -14,10 +14,13 @@ include { STARSOLO as               STARSOLO_GEX                      }   from '
 
 workflow PERTURBSEQ{
 
+  take:
+  ch_input
+
   main:
   reads_ch =
     Channel
-        .fromList(samplesheetToList(params.input, "${projectDir}/assets/schema_input.json"))
+        .fromList(samplesheetToList(ch_input, "${projectDir}/assets/schema_input.json"))
         .map { meta, r1, r2 ->
             tuple(
                 tuple(meta.id, meta.lyb_type),   // grouping key
