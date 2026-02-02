@@ -154,10 +154,6 @@
         "show_hidden_params": {
             "type": "boolean"
         },
-        "schema_ignore_params": {
-            "type": "string",
-            "default": "genomes,modules"
-        },
         "enable_conda": {
             "type": "boolean"
         },
