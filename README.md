@@ -18,7 +18,7 @@ To run **perturb-seq** pipeline, you should install:
 
   * **Java 17** (or later, up to 25);
  
-    * If you find that your **Java** version is below v11 after installation, you may encounter difficulties running **Nextflow** since a lower **Java** version is set as the default. To resolve this, execute the following command:
+    * If you find that your **Java** version is below v17 after installation, you may encounter difficulties running **Nextflow** since a lower **Java** version is set as the default. To resolve this, execute the following command:
 
       * ```export JAVA_HOME=$(/usr/libexec/java_home -v 17) ```
  

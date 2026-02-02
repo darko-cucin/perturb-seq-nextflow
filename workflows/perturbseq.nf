@@ -52,10 +52,8 @@ workflow PERTURBSEQ{
   
   if (params.barcode_whitelist) {
         ch_barcode_whitelist = file(params.barcode_whitelist, checkIfExists: true)
-    } else if (protocol_config.containsKey("whitelist")) {
-        ch_barcode_whitelist = file("$projectDir/${protocol_config['whitelist']}", checkIfExists: true)
     } else {
-        ch_barcode_whitelist = []
+        ch_barcode_whitelist = file("$projectDir/${protocol_config['whitelist']}", checkIfExists: true)
     }
 
  FASTQC (
